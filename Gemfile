@@ -59,3 +59,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+#ruby-gemset=railstutorial_rails_4_0
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'sprockets', '2.11.0'
