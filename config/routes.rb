@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
-  get 'users/new'
+  #get 'users/new'
+  #non più necessario dopo aver messo resources: users
 
   #prima versione routes
   #get 'static_pages/home'
@@ -24,6 +25,9 @@ Rails.application.routes.draw do
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+
+  resources :users
+  match '/signup',  to: 'users#new',            via: 'get'
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
